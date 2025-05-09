@@ -208,6 +208,12 @@ h1, h2, h3, p {
   text-align: center;
   overflow: hidden;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .hero__title {
   color: #fff;
   text-align: center;
