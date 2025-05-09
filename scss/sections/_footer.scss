@@ -1,0 +1,171 @@
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-background;
+
+  & > .container {
+  display: flex;
+  align-items:first baseline;
+}
+
+&__wrapper {
+  width: 235px;
+}
+
+
+&__logo {
+  color: $title-color;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
+&__color {
+  color: $accent-color;
+}
+
+&__address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+&__box {
+  margin-left: 70px;
+}
+
+&__position {
+  color: $title-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+}
+
+
+&__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 9px;
+}
+
+&__link {
+  color: $footer-numbers;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+&__title {
+  color: $title-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+&__items {
+  display: flex;
+  gap: 10px;
+}
+
+&__social {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover {
+    background-color: $accent-color;
+  }
+}
+
+
+&__icon {
+  width: 20px;
+  height: 20px;
+  fill: $title-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+&__block {
+  margin-left: 93px;
+}
+
+
+
+
+&__subscribe {
+  color: $title-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+&__form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+&__input {
+  color: $footer-numbers;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+}
+
+&__btn {
+  color: $title-color;
+  background-color: $accent-color;
+  padding: 10px 28px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+&__plane {
+  width: 24px;
+  height: 24px;
+  fill: $title-color;
+}
+
+}
+
+

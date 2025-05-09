@@ -1,0 +1,114 @@
+
+.card {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+
+  
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+&__item {
+  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+&:hover .card__desk {
+  opacity: 1;
+}
+}
+
+&__box {
+  position: relative;
+  overflow: hidden;
+}
+
+&__img {
+  width: 100%;
+}
+
+&__desk {
+  width: 100%;
+  height: 100%;
+  background-color: $accent-color;
+  padding: 63px 24px;
+  color: $title-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.54px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__wrap {
+  padding: 20px 24px;
+}
+
+&__title {
+  color: $text-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+  margin-bottom: 4px;
+}
+
+&__text {
+  color: $added-text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
+}
+
+}
+
+
+
+.button__list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button__btn {
+  color: $text-color;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  background: $team-background;
+  padding: 6px 22px;
+  border: none;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  color: $title-color;
+  background-color: $accent-color;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+}

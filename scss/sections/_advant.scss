@@ -1,0 +1,58 @@
+.advant {
+  padding-top: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    
+
+    &::before {
+      content: "";
+      margin-bottom: 30px;
+      display: block;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: $team-background;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:first-child::before {
+      background-image: url(../img/antenna.png);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../img/clock.png);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../img/diagram.png);
+    }
+
+    &:last-child::before {
+      background-image: url(../img/astronaut.png);
+    }
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: $added-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.4px;
+  }
+}
