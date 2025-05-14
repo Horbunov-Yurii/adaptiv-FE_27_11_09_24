@@ -6,21 +6,39 @@
 
   & > .container {
   display: flex;
-  align-items:first baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: first baseline;
+    }
+  
+    @media screen and (min-width: 1200px) {
+    }
 }
 
 &__wrapper {
-  width: 235px;
+  text-align: center;
+
+  
+    @media screen and (min-width: 1200px) {
+       text-align: start;
+    }
 }
 
 
 &__logo {
   color: $title-color;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+  
+    @media screen and (min-width: 1200px) {
+      letter-spacing: 0.78px;
+      font-size: 26px;
+    }
 }
 
 &__color {
@@ -33,7 +51,16 @@
 }
 
 &__box {
-  margin-left: 70px;
+  text-align: center;
+  
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      text-align: start;
+    }
 }
 
 &__position {
@@ -104,7 +131,11 @@
 
 
 &__block {
-  margin-left: 93px;
+  margin-left: auto;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
 }
 
 
