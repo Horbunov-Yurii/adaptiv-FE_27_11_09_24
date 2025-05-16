@@ -33,6 +33,7 @@
       margin-right: 93px;
     }
 
+
     @keyframes logo-scale {
       0% {
         transform: scale(0.9);
@@ -43,9 +44,27 @@
     }
   }
 
+  
   &__color {
     color: $accent-color;
   }
+
+&__btn{
+  // background-color: transparent;
+  // background-color: red;
+  border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+@media screen and (min-width: 768px){
+      display: none;
+    }
+}
+&__menu{
+  width: 40px;
+  height: 40px;
+  fill: black;
+}
 
   &__list {
     display: none;
