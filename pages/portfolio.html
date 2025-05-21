@@ -20,40 +20,65 @@
 
 </head>
 <body>
-        <header class="header">
-      <div class="container">
-        <a href="../index.html" class="header__logo"
-          ><span class="header__color">Web</span>Studio</a
-        >
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="../index.html" class="nav__link">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a href="../pages/portfolio.html" class="nav__link curent">Портфоліо</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="mailto:info@devstudio.com" class="header__link"
-              ><svg class="header__icon">
-                <use href="../img/symbol-defs.svg#icon-mail"></use>
-                </svg><span class="header__cell">info@devstudio.com</span></a
-            >
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="header__logo"
+        ><span class="header__color">Web</span>Studio</a
+      >
+      <button class="header__btn" type="button" data-mobile-open><svg class="header__menu">
+        <use href="../img/symbol-defs.svg#icon-lines"></use>
+      </svg></button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link curent">Студія</a>
           </li>
-          <li class="header__item">
-            <a href="tel:+380961111111" class="header__link"
-              ><svg class="header__icon">
-                <use href="../img/symbol-defs.svg#icon-tel"></use>
-                </svg>
-                <span class="header__cell">+38 096 111 11 11</span></a>
+          <li class="nav__item">
+            <a href="../pages/portfolio.html" class="nav__link">Портфоліо</a>
           </li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="mailto:info@devstudio.com" class="header__link"
+            ><svg class="header__icon">
+              <use href="../img/symbol-defs.svg#icon-mail"></use>
+              </svg><span class="header__cell">info@devstudio.com</span></a
+          >
+        </li>
+        <li class="header__item">
+          <a href="tel:+380961111111" class="header__link"
+            ><svg class="header__icon">
+              <use href="../img/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              <span class="header__cell">+38 096 111 11 11</span></a>
+        </li>
+      </ul>
+      <div class="mobile is-hidden" data-mobile>
+        <button type="button" class="mobile__close" data-mobile-close>
+          <svg class="mobile__icon">
+            <use href="../img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile__list">
+          <li class="mobile__item"><a href="../index.html" class="mobile__link">Студія</a></li>
+          <li class="mobile__item"><a href="../pages/portfolio.html" class="mobile__link">Портфоліо</a></li>
+          <li class="mobile__item"><a href="#" class="mobile__link">Контакти</a></li>
+        </ul>
+        <ul class="mobile__items">
+          <li class="mobile__itm"><a href="tel:+380961111111" class="mobile__contact">+38 096 111 11 11</a></li>
+          <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contact">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile__elements">
+          <li class="mobile__elem"><a href="#" class="mobile__social">Instagram</a></li>
+          <li class="mobile__elem"><a href="#" class="mobile__social">Twitter</a></li>
+          <li class="mobile__elem"><a href="#" class="mobile__social">Facebook</a></li>
+          <li class="mobile__elem"><a href="#" class="mobile__social">LinkedIn</a></li>
         </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
     <main>
         <section class="card">
@@ -235,5 +260,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/mobile.js"></script>
 </body>
 </html>
