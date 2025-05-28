@@ -24,6 +24,9 @@
         <a href="./index.html" class="header__logo"
           ><span class="header__color">Web</span>Studio</a
         >
+        <button class="header__btn" type="button" data-mobile-open><svg class="header__menu">
+          <use href="./img/symbol-defs.svg#icon-lines"></use>
+        </svg></button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -51,6 +54,28 @@
                 <span class="header__cell">+38 096 111 11 11</span></a>
           </li>
         </ul>
+        <div class="mobile is-hidden" data-mobile>
+          <button type="button" class="mobile__close" data-mobile-close>
+            <svg class="mobile__icon">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+            <li class="mobile__item"><a href="./pages/portfolio.html" class="mobile__link">Портфоліо</a></li>
+            <li class="mobile__item"><a href="#" class="mobile__link">Контакти</a></li>
+          </ul>
+          <ul class="mobile__items">
+            <li class="mobile__itm"><a href="tel:+380961111111" class="mobile__contact">+38 096 111 11 11</a></li>
+            <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contact">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile__elements">
+            <li class="mobile__elem"><a href="#" class="mobile__social">Instagram</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">Twitter</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">Facebook</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -464,5 +489,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
