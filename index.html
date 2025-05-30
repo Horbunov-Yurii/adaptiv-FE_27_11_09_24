@@ -150,7 +150,12 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./img/igor.jpg" alt="igor" class="team__img" />
+              <picture>
+                <source srcset="./img/destop/ihor-destop@1x.webp 1x, ./img/destop/ihor-destop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./img/tablet/ihor-tablet@1x.webp 1x, ./img/tablet/ihor-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./img/mobile/ihor-mobile@1x.webp 1x, ./img/mobile/ihor-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <img src="./img/igor.jpg" alt="igor" class="team__img" />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__taxt">Product Designer</p>
